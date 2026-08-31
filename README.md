@@ -3,12 +3,12 @@ An encryption algorithym by Jessica Emberly.
 
 # Progress
 ```
-90%
+91%
 ```
 
 # Status
 ```
-❌ Not working. ❌
+❌ Sort of working. ❌
 ```
 
 ```
