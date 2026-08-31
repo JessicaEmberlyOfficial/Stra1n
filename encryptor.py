@@ -218,6 +218,36 @@ def encrypt():
     dfep = input("An encrypted file already exists, do you want to replace it? (y) or (n): ")
     if dfep == "y":
       os.system("clear")
+      open(os.getcwd() + "/data.txt", "w")
+      with open(os.getcwd() + "/data.txt", 'w') as file:
+        if duwap == True:
+          file.write(d1 + d2 + d3 + d4 + d5 + d6)
+        elif duwap == False:
+          file.write(d6)
+          os.system("clear")
+      if os.path.isfile(os.getcwd() + "/data.txt") == True:
+            print("Encrypted file created at: " + os.getcwd() + "/data.txt")
+      elif os.path.isfile(os.getcwd() + "/data.txt") == False:
+        os.system("clear")
+        print("There was an error creating your file—returning in [5].")
+        time.sleep(1)
+        os.system("clear")
+        print("There was an error creating your file—returning in [4].")
+        time.sleep(1)
+        os.system("clear")
+        print("There was an error creating your file—returning in [3].")
+        time.sleep(1)
+        os.system("clear")
+        print("There was an error creating your file—returning in [2].")
+        time.sleep(1)
+        os.system("clear")
+        print("There was an error creating your file—returning in [1].")
+        time.sleep(1)
+        os.system("clear")
+        return encrypt()
+      os.system("exit")
+    elif dfep == "n":
+      os.system("clear")
       name = input("Please enter a new name for your new file? (e.g. Stra1n): ")
       if "." in name:
         os.system("clear")
@@ -237,7 +267,7 @@ def encrypt():
         time.sleep(1)
         os.system("clear")
         return encrypt()
-      if "." not in name:
+      elif "." not in name:
         open(os.getcwd() + "/" + name + ".txt", "x")
         with open(os.getcwd() + name + ".", 'w') as file:
           if duwap == True:
@@ -266,24 +296,6 @@ def encrypt():
             time.sleep(1)
             os.system("clear")
             return encrypt()
-    if dfep == "n":
-      os.system("clear")
-      print("Exiting in [5].")
-      time.sleep(1)
-      os.system("clear")
-      print("Exiting in [4].")
-      time.sleep(1)
-      os.system("clear")
-      print("Exiting in [3].")
-      time.sleep(1)
-      os.system("clear")
-      print("Exiting in [2].")
-      time.sleep(1)
-      os.system("clear")
-      print("Exiting in [1].")
-      time.sleep(1)
-      os.system("clear")
-      os.system("exit")
   if os.path.isfile(os.getcwd() + "/data.txt") == False:
     open(os.getcwd() + "/data.txt", "x")
     with open(os.getcwd() + "/data.txt", 'w') as file:
