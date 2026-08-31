@@ -5,3 +5,8 @@ An encryption algorithym by Jessica Emberly.
 ```
 90%
 ```
+
+# Status
+```
+❌ Not working. ❌
+```
