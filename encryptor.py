@@ -127,8 +127,6 @@ def encrypt():
     d3 = str(data_seg_3).join(_password_split_3)
     d4 = str(data_seg_4).join(_password_split_4)
     d5 = str(data_seg_5).join(_password_split_5)
-    print(_password_split_1)
-    time.sleep(10)
   elif duwap == False:
     _new_message = _ev.replace("1","9.1").replace("2", "8.1").replace("3", "7.1").replace("4", "6.1").replace("5", "5.1").replace("6", "4.1").replace("7","3.1").replace("8", "2.1").replace("9", "1.1").replace("a", "0.1").replace("b", "9.2").replace("c", "8.2").replace("d", "7.2").replace("e", "6.2").replace("f", "5.2").replace("g", "4.2").replace("h", "3.2").replace("i", "2.2").replace("j", "1.2").replace("k", "0.2").replace("l", "9.3").replace("m", "8.3").replace("n", "7.3").replace("o", "6.3").replace("p", "5.3").replace("q", "4.3").replace("r", "3.3").replace("s", "2.3").replace("t", "1.3").replace("u", "0.3").replace("v", "9.4").replace("w", "8.4").replace("x", "7.4").replace("y", "6.4").replace("z", "5.4").replace("A", "4.4").replace("B", "3.4").replace("C", "2.4").replace("D", "1.4").replace("E", "0.4").replace("F", "9.5").replace("G", "8.5").replace("H", "7.5").replace("I", "6.5").replace("J", "5.5").replace("K", "4.5").replace("L", "3.5").replace("M", "2.5").replace("N", "1.5").replace("O", "0.5").replace("P", "9.6").replace("Q", "8.6").replace("R", "7.6").replace("S", "6.6").replace("T", "5.6").replace("U", "4.6").replace("V", "3.6").replace("W", "2.6").replace("X", "1.6").replace("Y", "0.6").replace("Z", "9.7")
     
@@ -218,14 +216,23 @@ def encrypt():
           os.system("clear")
           return encrypt()
     elif dfep == "n":
-      open(os.getcwd() + "/data.txt", "x")
-      with open(os.getcwd() + "/data.txt", 'w') as file:
-        if duwap == True:
-          file.write(d1 + d2 + d3 + d4 + d5 + d6)
-          os.system("clear")
-        elif duwap == False:
-          file.write(d6)
-          os.system("clear")
+      os.system("clear")
+      print("Exiting in [5].")
+      time.sleep(1)
+      os.system("clear")
+      print("Exiting in [4].")
+      time.sleep(1)
+      os.system("clear")
+      print("Exiting in [3].")
+      time.sleep(1)
+      os.system("clear")
+      print("Exiting in [2].")
+      time.sleep(1)
+      os.system("clear")
+      print("Exiting in [1].")
+      time.sleep(1)
+      os.system("clear")
+      os.system("exit")
   elif os.path.isfile(os.getcwd() + "/data.txt") == False:
     open(os.getcwd() + "/data.txt", "x")
     with open(os.getcwd() + "/data.txt", 'w') as file:
