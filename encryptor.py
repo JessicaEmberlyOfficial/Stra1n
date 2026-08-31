@@ -168,7 +168,7 @@ def encrypt():
     if dfep == "y":
       # Move contents to a text file.
       with open(os.getcwd() + "/data.stra1n", 'w') as file:
-      #  file.write(d1 + d2 + d3 + d4 + d5 + d6)
+        file.write(d1 + d2 + d3 + d4 + d5 + d6)
         os.system("clear")
     elif dfep == "n":
       os.system("clear")
