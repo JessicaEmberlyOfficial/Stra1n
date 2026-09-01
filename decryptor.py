@@ -3,6 +3,33 @@ import time
 
 def decryptor():
 
+  a = "."
+  b = ".."
+  c = "..."
+  d = "...."
+  e = "....."
+  f = "......"
+  g = "......."
+  h = "........"
+  i = "........."
+  j = ".........."
+  k = "..........."
+  l = "............"
+  m = "............."
+  n = ".............."
+  o = "..............."
+  p = "................"
+  q = "................."
+  r = ".................."
+  s = "..................."
+  t = "...................."
+  u = "....................."
+  v = "......................"
+  w = "......................."
+  x = "........................"
+  y = "........................."
+  z = ".........................."
+
   # @
   at = "999"
   # #
@@ -116,9 +143,9 @@ def decryptor():
     if len(question) > 0:
       with open(os.getcwd() + "/" + question + ".txt", "r") as file:
         if _password_split_1 or _password_split_2 or _password_split_3 or _password_split_4 or _password_split_5 in file:
-          if # in file:
+          if "55.03" in file:
             print(":)")
-          elif # not in file:
+          else:
             os.system("clear") 
             print("Invalid file—returning in [5].")
             time.sleep(1)
