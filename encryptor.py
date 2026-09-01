@@ -15,34 +15,7 @@ def encrypt():
   data_seg_4 = random.randbytes(1000)
   data_seg_5 = random.randbytes(1000)
   data_seg_6 = random.randbytes(1000)
-
-  a = "."
-  b = ".."
-  c = "..."
-  d = "...."
-  e = "....."
-  f = "......"
-  g = "......."
-  h = "........"
-  i = "........."
-  j = ".........."
-  k = "..........."
-  l = "............"
-  m = "............."
-  n = ".............."
-  o = "..............."
-  p = "................"
-  q = "................."
-  r = ".................."
-  s = "..................."
-  t = "...................."
-  u = "....................."
-  v = "......................"
-  w = "......................."
-  x = "........................"
-  y = "........................."
-  z = ".........................."
-
+  
   # @
   at = "999"
   # #
@@ -133,6 +106,8 @@ def encrypt():
   ue2 = "956"
   # ¥
   odd_qm = "955"
+
+  numbers = str(random.randrange(999999, 999999999999)) + str(random.randrange(999999, 999999999999)) + str(random.randrange(999999, 999999999999)) + str(random.randrange(999999, 999999999999)) + str(random.randrange(999999, 999999999999)) + str(random.randrange(999999, 999999999999)) + str(random.randrange(999999, 999999999999)) + str(random.randrange(999999, 999999999999)) + str(random.randrange(999999, 999999999999)) + str(random.randrange(999999, 999999999999)) + str(random.randrange(999999, 999999999999)) + str(random.randrange(999999, 999999999999))
   
   duwap = False
 
@@ -212,7 +187,7 @@ def encrypt():
   _new_message_join_3 = " --------start-------- " + eighth_part + " --------end-------- "
   _new_message_join_4 = " ---------start--------- " + ninth_part + " ---------end---------"
   _new_message_join_5 = " ----------start---------- " + tenth_part + " ----------end----------"
-  d6 = str(data_seg_6).join(_new_message_join_1 + str(random.randbytes(50)) + _new_message_join_2 + str(random.randbytes(100)) + _new_message_join_3 + str(random.randbytes(150)) + _new_message_join_4 + str(random.randbytes(200)) + _new_message_join_5 + str(random.randbytes(250)))
+  d6 = str(data_seg_6).join(_new_message_join_1 + str(random.randbytes(50)) + numbers + _new_message_join_2 + str(random.randbytes(100)) + _new_message_join_3 + numbers + str(random.randbytes(150)) + _new_message_join_4 + numbers + str(random.randbytes(200)) + _new_message_join_5 + str(random.randbytes(250)) + numbers + str(random.randbytes(300)) + str(random.randbytes(350)) + str(random.randbytes(400)) + str(random.randbytes(450)) + str(random.randbytes(500)))
   if os.path.isfile(os.getcwd() + "/data.txt") == True:
     os.system("clear")
     dfep = input("An encrypted file already exists, do you want to replace it? (y) or (n): ")
