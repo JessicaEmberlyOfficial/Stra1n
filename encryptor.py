@@ -216,11 +216,11 @@ def encrypt():
   eighth_part = _new_message[len(_new_message)//2]
   ninth_part = _new_message[len(_new_message)//2]
   tenth_part = _new_message[len(_new_message)//2:]
-  _new_message_join_1 = " ------start------ " + sixth_part + " ------end------ "
-  _new_message_join_2 = " -------start------- " + seventh_part + " -------end------- "
-  _new_message_join_3 = " --------start-------- " + eighth_part + " --------end-------- "
-  _new_message_join_4 = " ---------start--------- " + ninth_part + " ---------end---------"
-  _new_message_join_5 = " ----------start---------- " + tenth_part + " ----------end----------"
+  _new_message_join_1 = "/06/" + sixth_part + "/06/"
+  _new_message_join_2 = "/07/" + seventh_part + "/07/"
+  _new_message_join_3 = "/08/" + eighth_part + "/08/"
+  _new_message_join_4 = "/09/" + ninth_part + "/09/"
+  _new_message_join_5 = "/10/" + tenth_part + "/10/"
   d7 = str(data_seg_7).join(_new_message_join_1 + str(random.randbytes(50)) + numbers + _new_message_join_2 + str(random.randbytes(100)) + _new_message_join_3 + numbers + str(random.randbytes(150)) + _new_message_join_4 + numbers + str(random.randbytes(200)) + _new_message_join_5 + str(random.randbytes(250)) + numbers + str(random.randbytes(300)) + str(random.randbytes(350)) + str(random.randbytes(400)) + str(random.randbytes(450)) + str(random.randbytes(500)))
   if os.path.isfile(os.getcwd() + "/data.txt") == True:
     os.system("clear")
