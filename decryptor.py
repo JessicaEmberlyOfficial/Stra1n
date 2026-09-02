@@ -154,27 +154,10 @@ def decryptor():
     return decryptor
 
   if duuap == True:
-    _new_password = password.replace("a", a + " ").replace("b", b + " ").replace("c", c + " ").replace("d", d + " ").replace("e", e + " ").replace("f", f + " ").replace("g", g + " ").replace("h", h + " ").replace("i", i + " ").replace("j", j + " ").replace("k", k + " ").replace("l", l + " ").replace("m", m + " ").replace("n", n + " ").replace("o", o + " ").replace("p", p + " ").replace("q", q + " ").replace("r", r + " ").replace("s", s + " ").replace("t", t + " ").replace("u", u + " ").replace("v", v + " ").replace("w", w + " ").replace("x", x + " ").replace("y", y + " ").replace("z", z + " ").replace("A", a + ".7").replace("B", b + ".7").replace("C", c + ".7").replace("D", d + ".7").replace("E", e + ".7").replace("F", f + ".7").replace("G", g + ".7").replace("H", h + ".7").replace("I", i + ".7").replace("J", j + ".7").replace("K", k + ".7").replace("L", l + ".7").replace("M", m + ".7").replace("N", n + ".7").replace("O", o + ".7").replace("P", p + ".7").replace("Q", q + ".7").replace("R", r + ".7").replace("S", s + ".7").replace("T", t + ".7").replace("U", u + ".7").replace("V", v + ".7").replace("W", w + ".7").replace("X", x + ".7").replace("Y", y + ".7").replace("Z", z + ".7").replace("@", at).replace("#", hashtag).replace("$", money).replace("&", _and).replace("*", star).replace("-", dash).replace("=", equals).replace("(", p_l).replace(")", p_r).replace("!", ep).replace('"', qm).replace("'", sqm).replace(":", colon).replace(";", semi_colon).replace("/", slash_r).replace("?", question_mark).replace(",", comma).replace("¡", upside_down_ep).replace("<", left).replace(">", right).replace("¢", cents).replace("|", vertical).replace("¿", upside_down_qm).replace("©", copyright).replace("®", reserved).replace("+", plus).replace("±", poob).replace("{", clb).replace("}", crb).replace("[", lb).replace("]", rb).replace("~", wave).replace("÷", division).replace("•", bd).replace("°", degrees).replace("`", tl).replace("´", tr).replace("¥", u).replace("£", ue).replace("€", ue2).replace("¥", odd_qm).replace("1", " 9 ").replace("2", " 8 ").replace("3", " 7 ").replace("4", " 6 ").replace("5", " ..... ").replace("6", " 4 ").replace("7", " 3 ").replace("8", " 2 ").replace("9", " 1 ")
-    first_part = _new_password[:len(_new_password)//2]
-    second_part = _new_password[len(_new_password)//2]
-    third_part = _new_password[len(_new_password)//2]
-    fourth_part = _new_password[len(_new_password)//2]
-    fifth_part = _new_password[len(_new_password)//2:]
-    _password_split_1 = " -start- " + first_part + " -end- "
-    _password_split_2 = " --start-- " + second_part + " --end-- "
-    _password_split_3 = " ---start--- " + third_part + " ---end--- "
-    _password_split_4 = " ----start---- " + fourth_part + " ----end---- "
-    _password_split_5 = " -----start----- " + fifth_part + " -----end----- "
-  else:
-    pass
-
-  if duuap == True:
     if len(password) == 256:
       if len(question) > 0:
         with open(os.getcwd() + "/" + question + ".txt", "r") as file:
-          if _password_split_1 or _password_split_2 or _password_split_3 or _password_split_4 or _password_split_5 in file:
-            if "99.01" or "88.01" or "77.01" or "66.01" or "55.01" or "44.01" or "33.01" or "22.01" or "11.01" or "00.01" or "99.02" or "88.02" or "77.02" or "66.02" or "55.02" or "44.02" or "33.02" or "22.02" or "11.02" or "00.02" or "99.03" or "88.03" or "77.03" or "66.03" or "55.03" or "44.03" or "33.03" or "22.03" or "11.03" or "00.03" or "99.04" or "88.04" or "77.04" or "66.04" or "55.04" or "44.04" or "33.04" or "22.04" or "11.04" or "00.04" or "99.05" or "88.05" or "77.05" or "66.05" or "55.05" or "44.05" or "33.05" or "22.05" or "11.05" or "00.05" or "99.06" or "88.06" or "77.06" or "66.06" or "55.06" or "44.06" or "33.06" or "22.06" or "11.06" or "00.06" in file:
-              # Read user sentence.
+          # missing code for reading password and message./
             else:
               os.system("clear") 
               print("Invalid file—returning in [5].")
