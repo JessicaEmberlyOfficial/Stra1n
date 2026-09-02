@@ -6,7 +6,7 @@ An encryption algorithym by Jessica Emberly.
 
 # Progress
 ```
-95%
+97%
 ```
 
 # Status
