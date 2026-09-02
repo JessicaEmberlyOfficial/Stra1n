@@ -232,7 +232,7 @@ def encrypt():
         if duwap == True:
           file.write(d1 + d2 + d3 + d4 + d5 + d6 + d7)
         elif duwap == False:
-          file.write(d6)
+          file.write(d7)
           os.system("clear")
       if os.path.isfile(os.getcwd() + "/data.txt") == True:
             print("Encrypted file created at: " + os.getcwd() + "/data.txt")
@@ -283,7 +283,7 @@ def encrypt():
             file.write(d1 + d2 + d3 + d4 + d5 + d6 + d7)
             os.system("clear")
           if duwap == False:
-            file.write(d6)
+            file.write(d7)
             os.system("clear")
           if os.path.isfile(os.getcwd() + "/" + name + ".txt") == True:
             print("Encrypted file created at: " + os.getcwd() + "/" + name + ".txt")
@@ -311,7 +311,7 @@ def encrypt():
       if duwap == True:
         file.write(d1 + d2 + d3 + d4 + d5 + d6 + d7)
       else:
-        file.write(d6)
+        file.write(d7)
       os.system("clear")
       if os.path.isfile(os.getcwd() + "/data.txt") == True:
         print("Encrypted file created at: " + os.getcwd() + "/data.txt")
