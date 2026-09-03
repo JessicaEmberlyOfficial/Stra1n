@@ -212,7 +212,7 @@ def encrypt():
         os.system("clear")
         _time = 5
         while time != 1:
-          print("Please do not add file extensions—returning in [" + str(_time) + ".")
+          print("Please do not add file extensions—returning in [" + str(_time) + "].")
           time.sleep(1)
           os.system("clear")
           _time -= 1
@@ -233,7 +233,7 @@ def encrypt():
             os.system("clear")
             _time = 5
             while time != 1:
-              print("There was an error creating your file—returning in [5].")
+              print("There was an error creating your file—returning in [" + str(_time) + "].")
               time.sleep(1)
               os.system("clear")
               _time -= 1
