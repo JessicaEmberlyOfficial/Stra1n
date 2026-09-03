@@ -1,7 +1,7 @@
 import os
 import time
 from encryptor import encrypt
-from decryptor import decryptor
+# from decryptor import decryptor
 os.system("clear")
 question = input("(d)ecrypt, or (e)ncrypt?: ")
 if question == "e":
@@ -10,19 +10,11 @@ elif question == "d":
   decryptor()
 elif question != "e" or "d":
   os.system("clear")
-  print("Invalid entry—exiting in [5].")
-  time.sleep(1)
-  os.system("clear")
-  print("Invalid entry—exiting in [4].")
-  time.sleep(1)
-  os.system("clear")
-  print("Invalid entry—exiting in [3].")
-  time.sleep(1)
-  os.system("clear")
-  print("Invalid entry—exiting in [2].")
-  time.sleep(1)
-  os.system("clear")
-  print("Invalid entry—exiting in [1].")
-  time.sleep(1)
-  os.system("clear")
-  os.system("exit")
+  _time = 5
+  while _time != 1:
+    print("Invalid entry—exiting in [" + str(_time) + "].")
+    time.sleep(1)
+    os.system("clear")
+    _time -= 1
+  else:
+    os.system("exit")
