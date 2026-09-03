@@ -48,96 +48,51 @@ def encrypt():
   z = ".........................."
 
   # Symbols.
-  # @
-  at = "999"
-  # #
-  hashtag = "998"
-  # $
-  money = "997"
-  # %
-  percent = "996"
-  # &
-  _and = "995"
-  # *
-  star = "994"
-  # -
-  dash = "993"
-  # =
-  equals = "992"
-  # (
-  p_l = "991"
-  # )
-  p_r = "990"
-  # !
-  ep = "989"
-  # "
-  qm = "988"
-  # '
-  sqm = "987"
-  # :
-  colon = "986"
-  # ;
-  semi_colon = "985"
-  # /
-  slash_r = "984"
-  # ?
-  question_mark = "983"
-  # .
-  period = "982"
-  # ,
-  comma = "981"
-  # ©
-  copyright = "980"
-  # ®
-  reserved = "979"
-  # ¢
-  cents = "978"
-  # <
-  left = "977"
-  # >
-  right = "976"
-  # _
-  underscore = "975"
-  # +
-  plus = "974"
-  # ¿
-  upside_down_qm = "973"
-  # [
-  lb = "972"
-  # ]
-  rb = "971"
-  # ^
-  up = "970"
-  # ¡
-  upside_down_ep = "969"
-  # °
-  degrees = "968"
-  # ×
-  multiply = "967"
-  # {
-  clb = "966"
-  # }
-  crb = "965"
-  # ±
-  poob = "964"
-  # ÷
-  division = "963"
-  # ~
-  wave = "962"
-  # `
-  tl = "961"
-  # ´
-  tr = "960"
-  # •
-  bd = "959"
-  # £
-  ue = "958"
-  # |
-  vertical = "957"
-  # €
-  ue2 = "956"
-  # ¥
-  odd_qm = "955"
+  one = "999"
+  two = "998"
+  three = "997"
+  four = "996"
+  five = "995"
+  six = "994"
+  seven = "993"
+  eight = "992"
+  nine = "991"
+  ten = "990"
+  eleven = "989"
+  twelve = "988"
+  thirteen = "987"
+  fourteen = "986"
+  fifteen = "985"
+  sixteen = "984"
+  seventeen = "983"
+  eighteen = "982"
+  nineteen = "981"
+  twenty = "980"
+  twenty_one = "979"
+  twenty_two = "978"
+  twenty_three = "977"
+  twenty_four = "976"
+  twenty_five = "975"
+  twenty_six = "974"
+  twenty_seven = "973"
+  twenty_eight = "972"
+  twenty_nine = "971"
+  thirty = "970"
+  thirty_one = "969"
+  thirty_two = "968"
+  thirty_three = "967"
+  thirty_four = "966"
+  thirty_five = "965"
+  thirty_six = "964"
+  thirty_seven = "963"
+  thirty_eight= "962"
+  thirty_nine = "961"
+  fourty = "960"
+  fourty_one = "959"
+  fourty_two = "958"
+  fourty_three = "957"
+  fourty_four = "956"
+  fourty_five = "955"
 
   # Random number generation for extensive randomization.
   numbers = str(random.randrange(1, 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(500, 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(1000, 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(1500, 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(2000, 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(2500, 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(3000, 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(3500, 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(4000, 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(4500, 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(5000, 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111))
@@ -183,7 +138,7 @@ def encrypt():
     _new_message = _ev.replace("1", "99.01").replace("2", "88.01").replace("3", "77.01").replace("4", "66.01").replace("5", "55.01").replace("6", "44.01").replace("7", "33.01").replace("8", "22.01").replace("9", "11.01").replace("a", "00.01").replace("b", "99.02").replace("c", "88.02").replace("d", "77.02").replace("e", "66.02").replace("f", "55.02").replace("g", "44.02").replace("h", "33.02").replace("i", "22.02").replace("j", "11.02").replace("k", "00.02").replace("l", "99.03").replace("m", "88.03").replace("n", "77.03").replace("o", "66.03").replace("p", "55.03").replace("q", "44.03").replace("r", "33.03").replace("s", "22.03").replace("t", "11.03").replace("u", "00.03").replace("v", "99.04").replace("w", "88.04").replace("x", "77.04").replace("y", "66.04").replace("z", "55.04").replace("A", "44.04").replace("B", "33.04").replace("C", "22.04").replace("D", "11.04").replace("E", "00.04").replace("F", "9.05").replace("G", "88.05").replace("H", "77.05").replace("I", "66.05").replace("J", "55.05").replace("K", "44.05").replace("L", "33.05").replace("M", "22.05").replace("N", "11.05").replace("O", "00.05").replace("P", "99.06").replace("Q", "88.06").replace("R", "77.06").replace("S", "66.06").replace("T", "55.06").replace("U", "44.06").replace("V", "33.06").replace("W", "22.06").replace("X", "11.06").replace("Y", "00.06").replace("Z", "99.07")
 
     # Replacing _password in order to obfuscate it.
-    _new_password = _password.replace("a", a + " ").replace("b", b + " ").replace("c", c + " ").replace("d", d + " ").replace("e", e + " ").replace("f", f + " ").replace("g", g + " ").replace("h", h + " ").replace("i", i + " ").replace("j", j + " ").replace("k", k + " ").replace("l", l + " ").replace("m", m + " ").replace("n", n + " ").replace("o", o + " ").replace("p", p + " ").replace("q", q + " ").replace("r", r + " ").replace("s", s + " ").replace("t", t + " ").replace("u", u + " ").replace("v", v + " ").replace("w", w + " ").replace("x", x + " ").replace("y", y + " ").replace("z", z + " ").replace("A", a + ".7").replace("B", b + ".7").replace("C", c + ".7").replace("D", d + ".7").replace("E", e + ".7").replace("F", f + ".7").replace("G", g + ".7").replace("H", h + ".7").replace("I", i + ".7").replace("J", j + ".7").replace("K", k + ".7").replace("L", l + ".7").replace("M", m + ".7").replace("N", n + ".7").replace("O", o + ".7").replace("P", p + ".7").replace("Q", q + ".7").replace("R", r + ".7").replace("S", s + ".7").replace("T", t + ".7").replace("U", u + ".7").replace("V", v + ".7").replace("W", w + ".7").replace("X", x + ".7").replace("Y", y + ".7").replace("Z", z + ".7").replace("@", at).replace("#", hashtag).replace("$", money).replace("&", _and).replace("*", star).replace("-", dash).replace("=", equals).replace("(", p_l).replace(")", p_r).replace("!", ep).replace('"', qm).replace("'", sqm).replace(":", colon).replace(";", semi_colon).replace("/", slash_r).replace("?", question_mark).replace(",", comma).replace("¡", upside_down_ep).replace("<", left).replace(">", right).replace("¢", cents).replace("|", vertical).replace("¿", upside_down_qm).replace("©", copyright).replace("®", reserved).replace("+", plus).replace("±", poob).replace("{", clb).replace("}", crb).replace("[", lb).replace("]", rb).replace("~", wave).replace("÷", division).replace("•", bd).replace("°", degrees).replace("`", tl).replace("´", tr).replace("¥", u).replace("£", ue).replace("€", ue2).replace("¥", odd_qm).replace("1", " 9 ").replace("2", " 8 ").replace("3", " 7 ").replace("4", " 6 ").replace("5", " ..... ").replace("6", " 4 ").replace("7", " 3 ").replace("8", " 2 ").replace("9", " 1 ")
+    _new_password = _password.replace("a", a + " ").replace("b", b + " ").replace("c", c + " ").replace("d", d + " ").replace("e", e + " ").replace("f", f + " ").replace("g", g + " ").replace("h", h + " ").replace("i", i + " ").replace("j", j + " ").replace("k", k + " ").replace("l", l + " ").replace("m", m + " ").replace("n", n + " ").replace("o", o + " ").replace("p", p + " ").replace("q", q + " ").replace("r", r + " ").replace("s", s + " ").replace("t", t + " ").replace("u", u + " ").replace("v", v + " ").replace("w", w + " ").replace("x", x + " ").replace("y", y + " ").replace("z", z + " ").replace("A", a + ".7").replace("B", b + ".7").replace("C", c + ".7").replace("D", d + ".7").replace("E", e + ".7").replace("F", f + ".7").replace("G", g + ".7").replace("H", h + ".7").replace("I", i + ".7").replace("J", j + ".7").replace("K", k + ".7").replace("L", l + ".7").replace("M", m + ".7").replace("N", n + ".7").replace("O", o + ".7").replace("P", p + ".7").replace("Q", q + ".7").replace("R", r + ".7").replace("S", s + ".7").replace("T", t + ".7").replace("U", u + ".7").replace("V", v + ".7").replace("W", w + ".7").replace("X", x + ".7").replace("Y", y + ".7").replace("Z", z + ".7").replace("@", one).replace("#", two).replace("$", three).replace("&", four).replace("*", five).replace("-", six).replace("=", seven).replace("(", eight).replace(")", nine).replace("!", ten).replace('"', eleven).replace("'", twelve).replace(":", thirteen).replace(";", nine).replace("/", ten).replace("?", eleven).replace(",", twelve).replace("¡", thirteen).replace("<", fourteen).replace(">", fifteen).replace("¢", sixteen).replace("|", seventeen).replace("¿", eighteen).replace("©", nineteen).replace("®", twenty).replace("+", twenty_one).replace("±", twenty_two).replace("{", twenty_three).replace("}", twenty_four).replace("[", twenty_five).replace("]", twenty_seven).replace("~", twenty_eight).replace("÷", twenty_nine).replace("•", thirty).replace("°", thirty_one).replace("`", thirty_two).replace("´", thirty_four).replace("¥", thirty_five).replace("£", thirty_six).replace("€", thirty_seven).replace("¥", thirty_eight).replace("1", "/999/").replace("2", "/888/").replace("3", "/777/").replace("4", "/666/").replace("5", "/555/").replace("6", "/444/").replace("7", "/333/").replace("8", "/222/").replace("9", "/111/")
 
     # Splitting _new_password.
     first_part = _new_password[:len(_new_password)//2]
