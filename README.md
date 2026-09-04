@@ -9,7 +9,12 @@ An encryption algorithm by Jessica Emberly.
 
 # Progress
 ```
-50%
+51%
+```
+
+# Notes
+```
+I changed alot so far from the original idea, but the idea is still being coversed, and I am analyzing the program's code each day, and I've been trying to better the Stra1n idea, so please give me time. 🙂
 ```
 
 # Status
