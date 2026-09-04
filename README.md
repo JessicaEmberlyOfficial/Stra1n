@@ -22,7 +22,7 @@ python run.py
 
 # Notes
 ```
-I changed alot so far from the original idea, but the idea is still being coversed, and I am analyzing the program's code each day, and I've been trying to better the Stra1n idea, so please give me time. 🙂
+I changed alot so far from the original idea, but the idea is still being conversed, and I am analyzing the program's code each day, and I've been trying to better the Stra1n idea, so please give me time. 🙂
 ```
 
 # Status
