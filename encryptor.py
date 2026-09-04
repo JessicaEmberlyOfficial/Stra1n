@@ -121,6 +121,18 @@ def encrypt():
 
   os.system("clear")
   _in = input("What do I encrypt? (Letters, and numbers only.): ")
+  if len(_in) > 0:
+    pass
+  else:
+    os.system("clear")
+    _time = 5
+    while _time != 1:
+      print("Please make sure to add something to encrypt—returning in [" + str(_time) + "].")
+      time.sleep(1)
+      os.system("clear")
+      _time -= 1
+    else:
+      return encrypt()
   os.system("clear")
   diuap = input("Do I use a password? (y) or (n): ")
 
@@ -187,7 +199,7 @@ def encrypt():
     d6 = str(data_seg_6).join(_new_password_id)
     
   elif duwap == False:
-    _new_message = _ev.replace("1","9.1").replace("2", "8.1").replace("3", "7.1").replace("4", "6.1").replace("5", "5.1").replace("6", "4.1").replace("7","3.1").replace("8", "2.1").replace("9", "1.1").replace("a", "0.1").replace("b", "9.2").replace("c", "8.2").replace("d", "7.2").replace("e", "6.2").replace("f", "5.2").replace("g", "4.2").replace("h", "3.2").replace("i", "2.2").replace("j", "1.2").replace("k", "0.2").replace("l", "9.3").replace("m", "8.3").replace("n", "7.3").replace("o", "6.3").replace("p", "5.3").replace("q", "4.3").replace("r", "3.3").replace("s", "2.3").replace("t", "1.3").replace("u", "0.3").replace("v", "9.4").replace("w", "8.4").replace("x", "7.4").replace("y", "6.4").replace("z", "5.4").replace("A", "4.4").replace("B", "3.4").replace("C", "2.4").replace("D", "1.4").replace("E", "0.4").replace("F", "9.5").replace("G", "8.5").replace("H", "7.5").replace("I", "6.5").replace("J", "5.5").replace("K", "4.5").replace("L", "3.5").replace("M", "2.5").replace("N", "1.5").replace("O", "0.5").replace("P", "9.6").replace("Q", "8.6").replace("R", "7.6").replace("S", "6.6").replace("T", "5.6").replace("U", "4.6").replace("V", "3.6").replace("W", "2.6").replace("X", "1.6").replace("Y", "0.6").replace("Z", "9.7")
+    _new_message = _ev.replace("1", message["one"]).replace("2", message["two"]).replace("3", message["three"]).replace("4", message["four"]).replace("5", message["five"]).replace("6", message["six"]).replace("7", message["seven"]).replace("8", message["eight"]).replace("9", message["nine"]).replace("a", message["a"]).replace("b", message["b"]).replace("c", message["c"]).replace("d", message["d"]).replace("e", message["e"]).replace("f", message["f"]).replace("g", message["g"]).replace("h", message["h"]).replace("i", message["i"]).replace("j", message["j"]).replace("k", message["l"]).replace("l", message["l"]).replace("m", message["m"]).replace("n", message["n"]).replace("o", message["o"]).replace("p", message["p"]).replace("q", message["q"]).replace("r", message["r"]).replace("s", message["s"]).replace("t", message["t"]).replace("u", message["u"]).replace("v", message["v"]).replace("w", message["w"]).replace("x", message["x"]).replace("y", message["y"]).replace("z", message["z"]).replace("A", message["_A"]).replace("B", message["_B"]).replace("C", message["_C"]).replace("D", message["_D"]).replace("E", message["_E"]).replace("F", message["_F"]).replace("G", message["_G"]).replace("H", message["_H"]).replace("I", message["_I"]).replace("J", message["_J"]).replace("K", message["_K"]).replace("L", message["_L"]).replace("M", message["_M"]).replace("N", message["_N"]).replace("O", message["_O"]).replace("P", message["_P"]).replace("Q", message["_Q"]).replace("R", message["_R"]).replace("S", message["_S"]).replace("T", message["_T"]).replace("U", message["_U"]).replace("V", message["_V"]).replace("W", message["_W"]).replace("X", message["_X"]).replace("Y", message["_Y"]).replace("Z", message["_Z"])
 
   # Split _new_message into 5 parts.
   sixth_part = _new_message[:len(_new_message)//2]
