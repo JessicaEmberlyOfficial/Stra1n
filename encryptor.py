@@ -1,8 +1,26 @@
 import os
 import random
 import time
+import configparser
 
 def encrypt():
+
+  # Increase values by...
+  increase_values_by = 0
+  
+  # Setup config parser.
+  config = configparser.ConfigParser()
+  config.read(os.getcwd() + "/Stra1n.ini")
+  alphabet = config["Alphabet"]
+  symbols = config["Symbols"]
+  bytes = config["Bytes"]
+  numbers = config["Numbers"]
+  dictionary = config["Dictionary"]
+
+  # Increase values by x.
+  increase_values_by = numbers["increase_values_by"]
+    
+  # Booleans.
   duwap = False
 
   # Strings.
@@ -11,91 +29,91 @@ def encrypt():
   _replaced = ""
 
   # Data segments.
-  data_seg_1 = random.randbytes(1000)
-  data_seg_2 = random.randbytes(1000)
-  data_seg_3 = random.randbytes(1000)
-  data_seg_4 = random.randbytes(1000)
-  data_seg_5 = random.randbytes(1000)
-  data_seg_6 = random.randbytes(1000)
-  data_seg_7 = random.randbytes(1000)
+  data_seg_1 = random.randbytes(int(bytes["byte_number"]))
+  data_seg_2 = random.randbytes(int(bytes["byte_number"]))
+  data_seg_3 = random.randbytes(int(bytes["byte_number"]))
+  data_seg_4 = random.randbytes(int(bytes["byte_number"]))
+  data_seg_5 = random.randbytes(int(bytes["byte_number"]))
+  data_seg_6 = random.randbytes(int(bytes["byte_number"]))
+  data_seg_7 = random.randbytes(int(bytes["byte_number"]))
 
   # Alphabet.
-  a = "."
-  b = ".."
-  c = "..."
-  d = "...."
-  e = "....."
-  f = "......"
-  g = "......."
-  h = "........"
-  i = "........."
-  j = ".........."
-  k = "..........."
-  l = "............"
-  m = "............."
-  n = ".............."
-  o = "..............."
-  p = "................"
-  q = "................."
-  r = ".................."
-  s = "..................."
-  t = "...................."
-  u = "....................."
-  v = "......................"
-  w = "......................."
-  x = "........................"
-  y = "........................."
-  z = ".........................."
+  a = alphabet["a"]
+  b = alphabet["b"]
+  c = alphabet["c"]
+  d = alphabet["d"]
+  e = alphabet["e"]
+  f = alphabet["f"]
+  g = alphabet["g"]
+  h = alphabet["h"]
+  i = alphabet["i"]
+  j = alphabet["j"]
+  k = alphabet["k"]
+  l = alphabet["l"]
+  m = alphabet["m"]
+  n = alphabet["n"]
+  o = alphabet["o"]
+  p = alphabet["p"]
+  q = alphabet["q"]
+  r = alphabet["r"]
+  s = alphabet["s"]
+  t = alphabet["t"]
+  u = alphabet["u"]
+  v = alphabet["v"]
+  w = alphabet["w"]
+  x = alphabet["x"]
+  y = alphabet["y"]
+  z = alphabet["z"]
 
   # Symbols.
-  one = "999"
-  two = "998"
-  three = "997"
-  four = "996"
-  five = "995"
-  six = "994"
-  seven = "993"
-  eight = "992"
-  nine = "991"
-  ten = "990"
-  eleven = "989"
-  twelve = "988"
-  thirteen = "987"
-  fourteen = "986"
-  fifteen = "985"
-  sixteen = "984"
-  seventeen = "983"
-  eighteen = "982"
-  nineteen = "981"
-  twenty = "980"
-  twenty_one = "979"
-  twenty_two = "978"
-  twenty_three = "977"
-  twenty_four = "976"
-  twenty_five = "975"
-  twenty_six = "974"
-  twenty_seven = "973"
-  twenty_eight = "972"
-  twenty_nine = "971"
-  thirty = "970"
-  thirty_one = "969"
-  thirty_two = "968"
-  thirty_three = "967"
-  thirty_four = "966"
-  thirty_five = "965"
-  thirty_six = "964"
-  thirty_seven = "963"
-  thirty_eight= "962"
-  thirty_nine = "961"
-  fourty = "960"
-  fourty_one = "959"
-  fourty_two = "958"
-  fourty_three = "957"
-  fourty_four = "956"
-  fourty_five = "955"
+  one = symbols["one"]
+  two = symbols["two"]
+  three = symbols["three"]
+  four = symbols["four"]
+  five = symbols["five"]
+  six = symbols["six"]
+  seven = symbols["seven"]
+  eight = symbols["eight"]
+  nine = symbols["nine"]
+  ten = symbols["ten"]
+  eleven = symbols["eleven"]
+  twelve = symbols["twelve"]
+  thirteen = symbols["thirteen"]
+  fourteen = symbols["fourteen"]
+  fifteen = symbols["fifteen"]
+  sixteen = symbols["sixteen"]
+  seventeen = symbols["seventeen"]
+  eighteen = symbols["eighteen"]
+  nineteen = symbols["nineteen"]
+  twenty = symbols["twenty"]
+  twenty_one = symbols["twenty_one"]
+  twenty_two = symbols["twenty_two"]
+  twenty_three = symbols["twenty_three"]
+  twenty_four = symbols["twenty_four"]
+  twenty_five = symbols["twenty_five"]
+  twenty_six = symbols["twenty_six"]
+  twenty_seven = symbols["twenty_seven"]
+  twenty_eight = symbols["twenty_eight"]
+  twenty_nine = symbols["twenty_nine"]
+  thirty = symbols["thirty"]
+  thirty_one = symbols["thirty_one"]
+  thirty_two = symbols["thirty_two"]
+  thirty_three = symbols["thirty_three"]
+  thirty_four = symbols["thirty_four"]
+  thirty_five = symbols["thirty_five"]
+  thirty_six = symbols["thirty_six"]
+  thirty_seven = symbols["thirty_seven"]
+  thirty_eight= symbols["thirty_eight"]
+  thirty_nine = symbols["thirty_nine"]
+  fourty = symbols["fourty"]
+  fourty_one = symbols["fourty_one"]
+  fourty_two = symbols["fourty_two"]
+  fourty_three = symbols["fourty_three"]
+  fourty_four = symbols["fourty_four"]
+  fourty_five = symbols["fourty_five"]
 
   # Random number generation for extensive randomization.
-  numbers = str(random.randrange(1, 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(500, 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(1000, 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(1500, 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(2000, 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(2500, 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(3000, 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(3500, 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(4000, 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(4500, 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(5000, 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111))
+  numbers = str(random.randrange(1, 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(int(500) + int(increase_values_by), 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(int(1000) + int(increase_values_by), 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(int(1500) + int(increase_values_by), 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(int(2000) + int(increase_values_by), 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(int(2500) + int(increase_values_by), 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(int(3000) + int(increase_values_by), 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(int(3500) + int(increase_values_by), 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(int(4000) + int(increase_values_by), 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(int(4500) + int(increase_values_by), 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)) + str(random.randrange(int(5000) + int(increase_values_by), 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111))
 
   # Does user want a password.
   duwap = False
@@ -121,24 +139,27 @@ def encrypt():
         _time -= 1
       else:
         return encrypt()
-  if diuap == "n":
+  elif diuap == "n":
       duwap = False
 
   # Dictionary for obfuscating message.
-  dictionary = {"a": "z", "b": "y", "c": "x", "d": "w", "e": "v", "f": "u", "g": "t", "h": "s", "i": "r", "j": "q", "k": "p", "l": "o", "m": "n", "n": "m", "o": "l", "p": "k", "q": "j", "r": "i", "s": "h", "t": "g", "u": "f", "v": "e", "w": "d", "x": "c", "y": "b", "z": "a"}
+  dictionary = {"a": dictionary["a"], "b": dictionary["b"], "c": dictionary["c"], "d": dictionary["d"], "e": dictionary["e"], "f": dictionary["f"], "g": dictionary["g"], "h": dictionary["h"], "i": dictionary["i"], "j": dictionary["j"], "k": dictionary["k"], "l": dictionary["l"], "m": dictionary["m"], "n": dictionary["n"], "o": dictionary["o"], "p": dictionary["p"], "q": dictionary["q"], "r": dictionary["r"], "s": dictionary["s"], "t": dictionary["u"], "u": dictionary["v"], "v": dictionary["w"], "w": dictionary["w"], "x": dictionary["x"], "y": dictionary["y"], "z": dictionary["z"]}
 
+  # Make translation.
   table = str.maketrans(dictionary)
 
+  # Translate.
   ev = _in.translate(table)
-  
+
+  # Set _ev.
   _ev = ev
-  
+
   if duwap == True:
     # Obfuscate message once more.
-    _new_message = _ev.replace("1", "99.01").replace("2", "88.01").replace("3", "77.01").replace("4", "66.01").replace("5", "55.01").replace("6", "44.01").replace("7", "33.01").replace("8", "22.01").replace("9", "11.01").replace("a", "00.01").replace("b", "99.02").replace("c", "88.02").replace("d", "77.02").replace("e", "66.02").replace("f", "55.02").replace("g", "44.02").replace("h", "33.02").replace("i", "22.02").replace("j", "11.02").replace("k", "00.02").replace("l", "99.03").replace("m", "88.03").replace("n", "77.03").replace("o", "66.03").replace("p", "55.03").replace("q", "44.03").replace("r", "33.03").replace("s", "22.03").replace("t", "11.03").replace("u", "00.03").replace("v", "99.04").replace("w", "88.04").replace("x", "77.04").replace("y", "66.04").replace("z", "55.04").replace("A", "44.04").replace("B", "33.04").replace("C", "22.04").replace("D", "11.04").replace("E", "00.04").replace("F", "9.05").replace("G", "88.05").replace("H", "77.05").replace("I", "66.05").replace("J", "55.05").replace("K", "44.05").replace("L", "33.05").replace("M", "22.05").replace("N", "11.05").replace("O", "00.05").replace("P", "99.06").replace("Q", "88.06").replace("R", "77.06").replace("S", "66.06").replace("T", "55.06").replace("U", "44.06").replace("V", "33.06").replace("W", "22.06").replace("X", "11.06").replace("Y", "00.06").replace("Z", "99.07")
+    _new_message = _ev.replace("1","9.1").replace("2", "8.1").replace("3", "7.1").replace("4", "6.1").replace("5", "5.1").replace("6", "4.1").replace("7","3.1").replace("8", "2.1").replace("9", "1.1").replace("a", "0.1").replace("b", "9.2").replace("c", "8.2").replace("d", "7.2").replace("e", "6.2").replace("f", "5.2").replace("g", "4.2").replace("h", "3.2").replace("i", "2.2").replace("j", "1.2").replace("k", "0.2").replace("l", "9.3").replace("m", "8.3").replace("n", "7.3").replace("o", "6.3").replace("p", "5.3").replace("q", "4.3").replace("r", "3.3").replace("s", "2.3").replace("t", "1.3").replace("u", "0.3").replace("v", "9.4").replace("w", "8.4").replace("x", "7.4").replace("y", "6.4").replace("z", "5.4").replace("A", "4.4").replace("B", "3.4").replace("C", "2.4").replace("D", "1.4").replace("E", "0.4").replace("F", "9.5").replace("G", "8.5").replace("H", "7.5").replace("I", "6.5").replace("J", "5.5").replace("K", "4.5").replace("L", "3.5").replace("M", "2.5").replace("N", "1.5").replace("O", "0.5").replace("P", "9.6").replace("Q", "8.6").replace("R", "7.6").replace("S", "6.6").replace("T", "5.6").replace("U", "4.6").replace("V", "3.6").replace("W", "2.6").replace("X", "1.6").replace("Y", "0.6").replace("Z", "9.7")
 
     # Replacing _password in order to obfuscate it.
-    _new_password = _password.replace("a", a + " ").replace("b", b + " ").replace("c", c + " ").replace("d", d + " ").replace("e", e + " ").replace("f", f + " ").replace("g", g + " ").replace("h", h + " ").replace("i", i + " ").replace("j", j + " ").replace("k", k + " ").replace("l", l + " ").replace("m", m + " ").replace("n", n + " ").replace("o", o + " ").replace("p", p + " ").replace("q", q + " ").replace("r", r + " ").replace("s", s + " ").replace("t", t + " ").replace("u", u + " ").replace("v", v + " ").replace("w", w + " ").replace("x", x + " ").replace("y", y + " ").replace("z", z + " ").replace("A", a + ".7").replace("B", b + ".7").replace("C", c + ".7").replace("D", d + ".7").replace("E", e + ".7").replace("F", f + ".7").replace("G", g + ".7").replace("H", h + ".7").replace("I", i + ".7").replace("J", j + ".7").replace("K", k + ".7").replace("L", l + ".7").replace("M", m + ".7").replace("N", n + ".7").replace("O", o + ".7").replace("P", p + ".7").replace("Q", q + ".7").replace("R", r + ".7").replace("S", s + ".7").replace("T", t + ".7").replace("U", u + ".7").replace("V", v + ".7").replace("W", w + ".7").replace("X", x + ".7").replace("Y", y + ".7").replace("Z", z + ".7").replace("@", one).replace("#", two).replace("$", three).replace("&", four).replace("*", five).replace("-", six).replace("=", seven).replace("(", eight).replace(")", nine).replace("!", ten).replace('"', eleven).replace("'", twelve).replace(":", thirteen).replace(";", nine).replace("/", ten).replace("?", eleven).replace(",", twelve).replace("¡", thirteen).replace("<", fourteen).replace(">", fifteen).replace("¢", sixteen).replace("|", seventeen).replace("¿", eighteen).replace("©", nineteen).replace("®", twenty).replace("+", twenty_one).replace("±", twenty_two).replace("{", twenty_three).replace("}", twenty_four).replace("[", twenty_five).replace("]", twenty_seven).replace("~", twenty_eight).replace("÷", twenty_nine).replace("•", thirty).replace("°", thirty_one).replace("`", thirty_two).replace("´", thirty_four).replace("¥", thirty_five).replace("£", thirty_six).replace("€", thirty_seven).replace("¥", thirty_eight).replace("1", "/999/").replace("2", "/888/").replace("3", "/777/").replace("4", "/666/").replace("5", "/555/").replace("6", "/444/").replace("7", "/333/").replace("8", "/222/").replace("9", "/111/")
+    _new_password = _password.replace("a", a + " ").replace("b", b + " ").replace("c", c + " ").replace("d", d + " ").replace("e", e + " ").replace("f", f + " ").replace("g", g + " ").replace("h", h + " ").replace("i", i + " ").replace("j", j + " ").replace("k", k + " ").replace("l", l + " ").replace("m", m + " ").replace("n", n + " ").replace("o", o + " ").replace("p", p + " ").replace("q", q + " ").replace("r", r + " ").replace("s", s + " ").replace("t", t + " ").replace("u", u + " ").replace("v", v + " ").replace("w", w + " ").replace("x", x + " ").replace("y", y + " ").replace("z", z + " ").replace("A", a + ".7").replace("B", b + ".7").replace("C", c + ".7").replace("D", d + ".7").replace("E", e + ".7").replace("F", f + ".7").replace("G", g + ".7").replace("H", h + ".7").replace("I", i + ".7").replace("J", j + ".7").replace("K", k + ".7").replace("L", l + ".7").replace("M", m + ".7").replace("N", n + ".7").replace("O", o + ".7").replace("P", p + ".7").replace("Q", q + ".7").replace("R", r + ".7").replace("S", s + ".7").replace("T", t + ".7").replace("U", u + ".7").replace("V", v + ".7").replace("W", w + ".7").replace("X", x + ".7").replace("Y", y + ".7").replace("Z", z + ".7").replace("@", one).replace("#", two).replace("$", three).replace("&", four).replace("*", five).replace("-", six).replace("=", seven).replace("(", eight).replace(")", nine).replace("!", ten).replace('"', eleven).replace("'", twelve).replace(":", thirteen).replace(";", nine).replace("/", ten).replace("?", eleven).replace(",", twelve).replace("¡", thirteen).replace("<", fourteen).replace(">", fifteen).replace("¢", sixteen).replace("|", seventeen).replace("¿", eighteen).replace("©", nineteen).replace("®", twenty).replace("+", twenty_one).replace("±", twenty_two).replace("{", twenty_three).replace("}", twenty_four).replace("[", twenty_five).replace("]", twenty_seven).replace("~", twenty_eight).replace("÷", twenty_nine).replace("•", thirty).replace("°", thirty_one).replace("`", thirty_two).replace("´", thirty_four).replace("¥", thirty_five).replace("£", thirty_six).replace("€", thirty_seven).replace("1", "/999/").replace("2", "/888/").replace("3", "/777/").replace("4", "/666/").replace("5", "/555/").replace("6", "/444/").replace("7", "/333/").replace("8", "/222/").replace("9", "/111/")
 
     # Splitting _new_password.
     first_part = _new_password[:len(_new_password)//2]
@@ -164,7 +185,7 @@ def encrypt():
     d5 = str(data_seg_5).join(_password_split_5)
     d6 = str(data_seg_6).join(_new_password_id)
     
-  if duwap == False:
+  elif duwap == False:
     _new_message = _ev.replace("1","9.1").replace("2", "8.1").replace("3", "7.1").replace("4", "6.1").replace("5", "5.1").replace("6", "4.1").replace("7","3.1").replace("8", "2.1").replace("9", "1.1").replace("a", "0.1").replace("b", "9.2").replace("c", "8.2").replace("d", "7.2").replace("e", "6.2").replace("f", "5.2").replace("g", "4.2").replace("h", "3.2").replace("i", "2.2").replace("j", "1.2").replace("k", "0.2").replace("l", "9.3").replace("m", "8.3").replace("n", "7.3").replace("o", "6.3").replace("p", "5.3").replace("q", "4.3").replace("r", "3.3").replace("s", "2.3").replace("t", "1.3").replace("u", "0.3").replace("v", "9.4").replace("w", "8.4").replace("x", "7.4").replace("y", "6.4").replace("z", "5.4").replace("A", "4.4").replace("B", "3.4").replace("C", "2.4").replace("D", "1.4").replace("E", "0.4").replace("F", "9.5").replace("G", "8.5").replace("H", "7.5").replace("I", "6.5").replace("J", "5.5").replace("K", "4.5").replace("L", "3.5").replace("M", "2.5").replace("N", "1.5").replace("O", "0.5").replace("P", "9.6").replace("Q", "8.6").replace("R", "7.6").replace("S", "6.6").replace("T", "5.6").replace("U", "4.6").replace("V", "3.6").replace("W", "2.6").replace("X", "1.6").replace("Y", "0.6").replace("Z", "9.7")
 
   # Split _new_message into 5 parts.
@@ -249,7 +270,7 @@ def encrypt():
       os.system("clear")
       if os.path.isfile(os.getcwd() + "/data.txt") == True:
         print("Encrypted file created at: " + os.getcwd() + "/data.txt")
-      if os.path.isfile(os.getcwd() + "/data.txt") == False:
+      elif os.path.isfile(os.getcwd() + "/data.txt") == False:
         os.system("clear")
         _time = 5
         while time != 1:
