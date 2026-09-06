@@ -14,6 +14,7 @@ def encrypt():
   numbers = config["Numbers"]
   dictionary = config["Dictionary"]
   message = config["Message"]
+  pid = config["PID"]
 
   # Increase values by x.
   increase_values_by = numbers["increase_values_by"]
@@ -183,7 +184,7 @@ def encrypt():
     _password_split_4 = "/04/" + fourth_part + "/04/"
     _password_split_5 = "/05/" + fifth_part + "/05/"
     _password_id = random.randrange(500, 1500)
-    _new_password_id = str(_password_id).replace("1", "3").replace("2", "9").replace("3", "8").replace("4", "6").replace("5", "4").replace("6", "2").replace("7", "1").replace("8", "0").replace("9", "5").replace("0", "7")
+    _new_password_id = str(_password_id).replace("0", pid["zero"]).replace("1", pid["one"]).replace("2", pid["two"]).replace("3", pid["three"]).replace("4", pid["four"]).replace("5", pid["five"]).replace("6", pid["six"]).replace("7", pid["seven"]).replace("8", pid["eight"]).replace("9", pid["nine"])
     os.system("clear")
     input("Please write down: " + str(_password_id) + " - Once saved, press enter.")
 
