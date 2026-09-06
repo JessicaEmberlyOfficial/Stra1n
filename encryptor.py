@@ -268,7 +268,7 @@ def encrypt():
               _time -= 1
             else:
               return encrypt()
-  if os.path.isfile(os.getcwd() + "/data.txt") == False:
+  elif os.path.isfile(os.getcwd() + "/data.txt") == False:
     with open(os.getcwd() + "/data.txt", 'w') as file:
       if duwap == True:
         file.write(d1 + d2 + d3 + d4 + d5 + d6 + d7)
