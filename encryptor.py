@@ -4,9 +4,6 @@ import time
 import configparser
 
 def encrypt():
-
-  # Increase values by...
-  increase_values_by = 0
   
   # Setup config parser.
   config = configparser.ConfigParser()
