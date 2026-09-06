@@ -249,7 +249,6 @@ def encrypt():
         else:
           return encrypt()
       elif "." not in name:
-        open(os.getcwd() + "/" + name + ".txt", "x")
         with open(os.getcwd() + name + ".", 'w') as file:
           if duwap == True:
             file.write(d1 + d2 + d3 + d4 + d5 + d6 + d7)
@@ -270,7 +269,6 @@ def encrypt():
             else:
               return encrypt()
   if os.path.isfile(os.getcwd() + "/data.txt") == False:
-    open(os.getcwd() + "/data.txt", "x")
     with open(os.getcwd() + "/data.txt", 'w') as file:
       if duwap == True:
         file.write(d1 + d2 + d3 + d4 + d5 + d6 + d7)
