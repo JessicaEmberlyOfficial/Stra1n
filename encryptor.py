@@ -212,7 +212,7 @@ def encrypt():
   _new_message_join_5 = " ----------start---------- " + tenth_part + " ----------end----------"
   
   # d7 is the obfuscated message data.
-  d7 = str(data_seg_7).join(_new_message_join_1 + str(random.randbytes(50)) + numbers + _new_message_join_2 + str(random.randbytes(100)) + _new_message_join_3 + numbers + str(random.randbytes(150)) + _new_message_join_4 + numbers + str(random.randbytes(200)) + _new_message_join_5 + str(random.randbytes(250)) + numbers + str(random.randbytes(300)) + str(random.randbytes(350)) + str(random.randbytes(400)) + str(random.randbytes(450)) + str(random.randbytes(500)))
+  d7 = str(data_seg_7).join(_new_message_join_1) + str(random.randbytes(50 + int(increase_values_by))) + numbers + _new_message_join_2 + str(random.randbytes(100 + int(increase_values_by))) + _new_message_join_3 + numbers + str(random.randbytes(150 + int(increase_values_by))) + _new_message_join_4 + numbers + str(random.randbytes(200 + int(increase_values_by))) + _new_message_join_5 + str(random.randbytes(250 + int(increase_values_by))) + numbers + str(random.randbytes(300 + int(increase_values_by))) + str(random.randbytes(350 + int(increase_values_by))) + str(random.randbytes(400 + int(increase_values_by))) + str(random.randbytes(450 + int(increase_values_by))) + str(random.randbytes(500 + int(increase_values_by)))
   if os.path.isfile(os.getcwd() + "/data.txt") == True:
     os.system("clear")
     dfep = input("An encrypted file already exists, do you want to replace it? (y) or (n): ")
