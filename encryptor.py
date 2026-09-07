@@ -13,7 +13,7 @@ def encrypt():
   bytes = config["Bytes"]
   numbers = config["Numbers"]
   dictionary = config["Dictionary"]
-  message = config["Message"]
+  message = config["Message_In"]
   pid = config["PID"]
   marker = config["marking_symbol"]
 
