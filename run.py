@@ -1,13 +1,13 @@
 import os
 import time
 from encryptor import encrypt
-# from decryptor import decryptor
+from decryptor import decrypt
 os.system("clear")
 question = input("(d)ecrypt, or (e)ncrypt?: ")
 if question == "e":
   encrypt()
 elif question == "d":
-  decryptor()
+  decrypt()
 elif question != "e" or "d":
   os.system("clear")
   _time = 5
