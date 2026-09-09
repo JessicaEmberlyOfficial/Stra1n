@@ -14,19 +14,16 @@ cd Stra1n
 ```
 python run.py
 ```
+```
+Please make sure to customize your (*.ini) file in order to makw your encrypted file look unreadable to unauthorized eyes.
+```
 
 # Progress
 ```
-52%
+90%
 ```
-
-# Notes
-I changed alot so far from the original idea, but the idea is still being conversed, and I am analyzing the program's code each day, and I've been trying to better the Stra1n idea, so please give me time. 🙂
 
 # Status
 ```
-❌ Sort of working. ❌
+✅ Working! ✅
 ```
-
-
-I uploaded this so I can go back to work on my video game, and possibly work on this on the side, but for now, I am setting aside, so I can focus on my video game. 🙂
