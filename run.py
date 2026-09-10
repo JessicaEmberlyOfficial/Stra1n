@@ -1,7 +1,7 @@
 import os
 import time
-from encryptor import encrypt
-from decryptor import decrypt
+from encrypter import encrypt
+from decrypter import decrypt
 os.system("clear")
 question = input("(d)ecrypt, or (e)ncrypt?: ")
 if question == "e":
