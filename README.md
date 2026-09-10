@@ -18,13 +18,3 @@ python run.py
 ```
 Please make sure to customize your (*.ini) file in order to make your encrypted file look unreadable to unauthorized eyes.
 ```
-
-# Progress
-```
-90%
-```
-
-# Status
-```
-✅ Working! ✅
-```
