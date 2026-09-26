@@ -17,7 +17,7 @@ cd Stra1n
 ```
 python run.py
 ```
-## Usage Notice
+### Usage Notice
 ```
 Please make sure to customize your (*.ini) file in order to make your encrypted file look unreadable to unauthorized eyes.
 ```
