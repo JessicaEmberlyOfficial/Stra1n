@@ -166,7 +166,6 @@ def encrypt():
       os.system("clear")
       _time -= 1
     return encrypt()
-  print(_in)
   os.system("clear")
   diuap = input("Do I use a password? (y) or (n): ")
 
