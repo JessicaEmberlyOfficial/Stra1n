@@ -10,6 +10,19 @@ An encryption algorithm by Jessica Emberly.
 * Python
 * RSA
 
+## Usage
+```
+pip install rsa
+```
+```
+git clone https://github.com/JessicaEmberlyOfficial/Stra1n/
+```
+```
+cd Stra1n
+```
+```
+python run.py
+```
 ## NOTICE
 ```
 All files here are subject to change, and will not function until the first ready-for-production version releases.
