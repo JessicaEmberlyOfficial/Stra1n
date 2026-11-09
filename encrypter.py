@@ -251,7 +251,7 @@ def encrypt():
       os.system("clear")
       with open(os.getcwd() + "/data.txt", 'w') as file:
         if duwap == True:
-          file.write(d1 + d2 + d3 + " - " + str(encMessage) + " - " + " -- " + str(encpwd1) + str(encpwd2) + str(encpwd3) + str(encpwd4) + str(encpwd5) + str(encpwd6) + str(encpwd7) + str(encpwd8) + str(encpwd9) + str(encpwd10) + str(encpwd11) + " -- " + " --- " + str(encPID) + " --- " + d4 + d5 + d6)
+          file.write(d1 + d2 + d3 + " - " + str(encMessage) + " - " + " -- " + str(encpwd1) + " -- " + " --- " + str(encpwd2) + " --- " " ---- " + str(encpwd3) + " ----- " + str(encpwd4) + " ----- " + " ------ " + str(encpwd5) + " ------ " + " ------- " + str(encpwd6) + " ------- " + " -------- " + str(encpwd7) + " -------- " + " --------- " + str(encpwd8) + " --------- " + " ---------- " + str(encpwd9) + " ---------- " + " ----------- " + str(encpwd10) + " ----------- " + " ------------ " + str(encpwd11) + " ------------ " + " ------------ " + str(encPID) + " ------------ " + d4 + d5 + d6)
         elif duwap == False:
           file.write(d1 + d2 + d3 + " - " + str(encMessage) + " - " + d4 + d5 + d6)
           os.system("clear")
@@ -283,7 +283,7 @@ def encrypt():
       elif "." not in name:
         with open(os.getcwd() + name + ".", 'w') as file:
           if duwap == True:
-            file.write(d1 + d2 + d3 + " - " + str(encMessage) + " - " + " -- " + str(encpwd1) + str(encpwd2) + str(encpwd3) + str(encpwd4) + str(encpwd5) + str(encpwd6) + str(encpwd7) + str(encpwd8) + str(encpwd9) + str(encpwd10) + str(encpwd11) + " -- " + " --- " + str(encPID) + " --- " + d4 + d5 + d6)
+            file.write(d1 + d2 + d3 + " - " + str(encMessage) + " - " + " -- " + str(encpwd1) + " -- " + " --- " + str(encpwd2) + " --- " " ---- " + str(encpwd3) + " ----- " + str(encpwd4) + " ----- " + " ------ " + str(encpwd5) + " ------ " + " ------- " + str(encpwd6) + " ------- " + " -------- " + str(encpwd7) + " -------- " + " --------- " + str(encpwd8) + " --------- " + " ---------- " + str(encpwd9) + " ---------- " + " ----------- " + str(encpwd10) + " ----------- " + " ------------ " + str(encpwd11) + " ------------ " + " ------------ " + str(encPID) + " ------------ " + d4 + d5 + d6)
             os.system("clear")
           if duwap == False:
             file.write(d1 + d2 + d3 + " - " + str(encMessage) + " - " + " -- " + str(encpwd1) + str(encpwd2) + str(encpwd3) + str(encpwd4) + str(encpwd5) + str(encpwd6) + str(encpwd7) + str(encpwd8) + str(encpwd9) + str(encpwd10) + str(encpwd11) + " -- " + " --- " + str(encPID) + " --- " + d4 + d5 + d6)
@@ -303,7 +303,8 @@ def encrypt():
   elif os.path.isfile(os.getcwd() + "/data.txt") == False:
     with open(os.getcwd() + "/data.txt", 'w') as file:
       if duwap == True:
-        file.write(d1 + d2 + d3 + " - " + str(encMessage) + " - " + " -- " + str(encpwd1) + str(encpwd2) + str(encpwd3) + str(encpwd4) + str(encpwd5) + str(encpwd6) + str(encpwd7) + str(encpwd8) + str(encpwd9) + str(encpwd10) + str(encpwd11) + " -- " + " --- " + str(encPID) + " --- " + d4 + d5 + d6)
+        file.write(d1 + d2 + d3 + " - " + str(encMessage) + " - " + " -- " + str(encpwd1) + " -- " + " --- " + str(encpwd2) + " --- " " ---- " + str(encpwd3) + " ----- " + str(encpwd4) + " ----- " + " ------ " + str(encpwd5) + " ------ " + " ------- " + str(encpwd6) + " ------- " + " -------- " + str(encpwd7) + " -------- " + " --------- " + str(encpwd8) + " --------- " + " ---------- " + str(encpwd9) + " ---------- " + " ----------- " + str(encpwd10) + " ----------- " + " ------------ " + str(encpwd11) + " ------------ " + " ------------ " + str(encPID) + " ------------ " + d4 + d5 + d6)
+        os.system("clear")
       elif duwap == False:
         file.write(d1 + d2 + d3 + " - " + str(encMessage) + " - " + d4 + d5 + d6)
       os.system("clear")
