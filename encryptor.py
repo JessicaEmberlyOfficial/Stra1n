@@ -250,9 +250,9 @@ def encrypt():
       os.system("clear")
       with open(os.getcwd() + "/data.txt", 'w') as file:
         if duwap == True:
-          file.write(d1 + d2 + d3 + " - " + str(encMessage) + " - " + " -- " + str(encpwd1) + " -- " + " --- " + str(encpwd2) + " --- " " ---- " + str(encpwd3) + " ----- " + str(encpwd4) + " ----- " + " ------ " + str(encpwd5) + " ------ " + " ------- " + str(encpwd6) + " ------- " + " -------- " + str(encpwd7) + " -------- " + " --------- " + str(encpwd8) + " --------- " + " ---------- " + str(encpwd9) + " ---------- " + " ----------- " + str(encpwd10) + " ----------- " + " ------------ " + str(encpwd11) + " ------------ " + " ------------ " + str(encPID) + " ------------ " + d4 + d5 + d6)
+          file.write(d1 + d2 + d3 + "/-/0/-/" + str(encMessage) + "/-/0/-/" + "/-/1/-/" + str(encpwd1) + "/-/1/-/" + "/-/2/-/" + str(encpwd2) + "/-/2/-/" "/-/3/-/" + str(encpwd3) + "/-/3/-/" + "/-/4/-/" + str(encpwd4) + "/-/4/-/" + "/-/5/-/" + str(encpwd5) + "/-/5/-/" + "/-/6/-/" + str(encpwd6) + "/-/6/-/" + "/-/7/-/" + str(encpwd7) + "/-/7/-/" + "/-/8/-/" + str(encpwd8) + "/-/8/-/" + "/-/9/-/" + str(encpwd9) + "/-/9/-/" + "/-/10/-/" + str(encpwd10) + "/-/10/-/" + "/-/11/-/" + str(encpwd11) + "/-/11/-/" + "/-/12/-/" + str(encPID) + "/-/12/-/" + d4 + d5 + d6)
         elif duwap == False:
-          file.write(d1 + d2 + d3 + " - " + str(encMessage) + " - " + d4 + d5 + d6)
+          file.write(d1 + d2 + d3 + "/-/0/-/" + str(encMessage) + "/-/0/-/" + d4 + d5 + d6)
           os.system("clear")
       if os.path.isfile(os.getcwd() + "/data.txt") == True:
             print("Encrypted file created at: " + os.getcwd() + "/data.txt")
@@ -282,10 +282,10 @@ def encrypt():
       elif "." not in name:
         with open(os.getcwd() + name + ".", 'w') as file:
           if duwap == True:
-            file.write(d1 + d2 + d3 + " - " + str(encMessage) + " - " + " -- " + str(encpwd1) + " -- " + " --- " + str(encpwd2) + " --- " " ---- " + str(encpwd3) + " ----- " + str(encpwd4) + " ----- " + " ------ " + str(encpwd5) + " ------ " + " ------- " + str(encpwd6) + " ------- " + " -------- " + str(encpwd7) + " -------- " + " --------- " + str(encpwd8) + " --------- " + " ---------- " + str(encpwd9) + " ---------- " + " ----------- " + str(encpwd10) + " ----------- " + " ------------ " + str(encpwd11) + " ------------ " + " ------------ " + str(encPID) + " ------------ " + d4 + d5 + d6)
+            file.write(d1 + d2 + d3 + "/-/0/-/" + str(encMessage) + "/-/0/-/" + "/-/1/-/" + str(encpwd1) + "/-/1/-/" + "/-/2/-/" + str(encpwd2) + "/-/2/-/" "/-/3/-/" + str(encpwd3) + "/-/3/-/" + "/-/4/-/" + str(encpwd4) + "/-/4/-/" + "/-/5/-/" + str(encpwd5) + "/-/5/-/" + "/-/6/-/" + str(encpwd6) + "/-/6/-/" + "/-/7/-/" + str(encpwd7) + "/-/7/-/" + "/-/8/-/" + str(encpwd8) + "/-/8/-/" + "/-/9/-/" + str(encpwd9) + "/-/9/-/" + "/-/10/-/" + str(encpwd10) + "/-/10/-/" + "/-/11/-/" + str(encpwd11) + "/-/11/-/" + "/-/12/-/" + str(encPID) + "/-/12/-/" + d4 + d5 + d6)
             os.system("clear")
           if duwap == False:
-            file.write(d1 + d2 + d3 + " - " + str(encMessage) + " - " + " -- " + str(encpwd1) + str(encpwd2) + str(encpwd3) + str(encpwd4) + str(encpwd5) + str(encpwd6) + str(encpwd7) + str(encpwd8) + str(encpwd9) + str(encpwd10) + str(encpwd11) + " -- " + " --- " + str(encPID) + " --- " + d4 + d5 + d6)
+            file.write(d1 + d2 + d3 + "/-/0/-/" + str(encMessage) + "/-/0/-/" + d4 + d5 + d6)
             os.system("clear")
           if os.path.isfile(os.getcwd() + "/" + name + ".txt") == True:
             print("Encrypted file created at: " + os.getcwd() + "/" + name + ".txt")
@@ -302,10 +302,10 @@ def encrypt():
   elif os.path.isfile(os.getcwd() + "/data.txt") == False:
     with open(os.getcwd() + "/data.txt", 'w') as file:
       if duwap == True:
-        file.write(d1 + d2 + d3 + " - " + str(encMessage) + " - " + " -- " + str(encpwd1) + " -- " + " --- " + str(encpwd2) + " --- " " ---- " + str(encpwd3) + " ----- " + str(encpwd4) + " ----- " + " ------ " + str(encpwd5) + " ------ " + " ------- " + str(encpwd6) + " ------- " + " -------- " + str(encpwd7) + " -------- " + " --------- " + str(encpwd8) + " --------- " + " ---------- " + str(encpwd9) + " ---------- " + " ----------- " + str(encpwd10) + " ----------- " + " ------------ " + str(encpwd11) + " ------------ " + " ------------ " + str(encPID) + " ------------ " + d4 + d5 + d6)
+        file.write(d1 + d2 + d3 + "/-/0/-/" + str(encMessage) + "/-/0/-/" + "/-/1/-/" + str(encpwd1) + "/-/1/-/" + "/-/2/-/" + str(encpwd2) + "/-/2/-/" "/-/3/-/" + str(encpwd3) + "/-/3/-/" + "/-/4/-/" + str(encpwd4) + "/-/4/-/" + "/-/5/-/" + str(encpwd5) + "/-/5/-/" + "/-/6/-/" + str(encpwd6) + "/-/6/-/" + "/-/7/-/" + str(encpwd7) + "/-/7/-/" + "/-/8/-/" + str(encpwd8) + "/-/8/-/" + "/-/9/-/" + str(encpwd9) + "/-/9/-/" + "/-/10/-/" + str(encpwd10) + "/-/10/-/" + "/-/11/-/" + str(encpwd11) + "/-/11/-/" + "/-/12/-/" + str(encPID) + "/-/12/-/" + d4 + d5 + d6)
         os.system("clear")
       elif duwap == False:
-        file.write(d1 + d2 + d3 + " - " + str(encMessage) + " - " + d4 + d5 + d6)
+        file.write(d1 + d2 + d3 + "/-/0/-/" + str(encMessage) + "/-/0/-/ + d4 + d5 + d6)
       os.system("clear")
       if os.path.isfile(os.getcwd() + "/data.txt") == True:
         print("Encrypted file created at: " + os.getcwd() + "/data.txt")
