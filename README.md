@@ -1,5 +1,5 @@
 # Stra1n
-An encryption algorithm by Jessica Emberly.
+An encryption algorithm extension, built on-top of RSA.
 <img width="940" height="788" alt="88661" src="https://github.com/user-attachments/assets/6ca662b0-29b1-446c-a4e6-e0eb9f6b4858" />
 
 ## The System Base
