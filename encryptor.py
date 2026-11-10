@@ -28,7 +28,6 @@ def encrypt():
   bytes = config["Bytes"]
   numbers = config["Numbers"]
   message = config["Message_In"]
-  marker = config["Marker"]
 
   # Increase values by x.
   increase_values_by = numbers["increase_values_by"]
