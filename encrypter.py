@@ -317,7 +317,7 @@ def encrypt():
           if os.path.isfile(os.getcwd() + "/" + name + ".txt") == False:
             os.system("clear")
             _time = 5
-            while time != 1:
+            while _time != 1:
               print("There was an error creating your file—returning in [" + str(_time) + "].")
               time.sleep(1)
               os.system("clear")
