@@ -216,19 +216,30 @@ def encrypt():
     sp = _new_password.split(" ", 11)
     _password_id = secrets.token_hex(16)
     # Encrypt message.
-    encMessage = rsa.encrypt(new_message_encode.encode("ascii"), msgPK)
+    encMessage = rsa.encrypt(_new_message_encode.encode("ascii"), msgPK)
     # Encrypt passsword.
-    encpwd1 = rsa.encrypt(sp[0].encode("ascii"), spPK)
-    encpwd2 = rsa.encrypt(sp[1].encode("ascii"), spPK1)
-    encpwd3 = rsa.encrypt(sp[2].encode("ascii"), spPK2)
-    encpwd4 = rsa.encrypt(sp[3].encode("ascii"), spPK3)
-    encpwd5 = rsa.encrypt(sp[4].encode("ascii"), spPK4)
-    encpwd6 = rsa.encrypt(sp[5].encode("ascii"), spPK5)
-    encpwd7 = rsa.encrypt(sp[6].encode("ascii"), spPK6)
-    encpwd8 = rsa.encrypt(sp[7].encode("ascii"), spPK7)
-    encpwd9 = rsa.encrypt(sp[8].encode("ascii"), spPK8)
-    encpwd10 = rsa.encrypt(sp[9].encode("ascii"), spPK9)
-    encpwd11 = rsa.encrypt(sp[10].encode("ascii"), spPK10)
+    encpwd1 = rsa.encrypt(sp[0].encode("ascii"),
+                          spPK)
+    encpwd2 = rsa.encrypt(sp[1].encode("ascii"),
+                          spPK1)
+    encpwd3 = rsa.encrypt(sp[2].encode("ascii"),
+                          spPK2)
+    encpwd4 = rsa.encrypt(sp[3].encode("ascii"),
+                          spPK3)
+    encpwd5 = rsa.encrypt(sp[4].encode("ascii"),
+                          spPK4)
+    encpwd6 = rsa.encrypt(sp[5].encode("ascii"),
+                          spPK5)
+    encpwd7 = rsa.encrypt(sp[6].encode("ascii"),
+                          spPK6)
+    encpwd8 = rsa.encrypt(sp[7].encode("ascii"),
+                          spPK7)
+    encpwd9 = rsa.encrypt(sp[8].encode("ascii"),
+                          spPK8)
+    encpwd10 = rsa.encrypt(sp[9].encode("ascii"),
+                           spPK9)
+    encpwd11 = rsa.encrypt(sp[10].encode("ascii"),
+                           spPK10)
     # Encrypt PID.
     encPID = rsa.encrypt(_password_id.encode("ascii"), pidPK)
     # Encode section.
