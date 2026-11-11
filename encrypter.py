@@ -275,7 +275,7 @@ def encrypt():
       os.system("clear")
       with open(os.getcwd() + "/data.txt", 'w') as file:
         if duwap == True:
-          file.write(d1 + d2 + d3 + "/-/0/-/" + encMessageb64e + "/-/0/-/" + "/-/1/-/" + encpwd1b64e + "/-/1/-/" + "/-/2/-/" + encpwd2b64e + "/-/2/-/" "/-/3/-/" + encpwdb64e + "/-/3/-/" + "/-/4/-/" + encpwd4b64e + "/-/4/-/" + "/-/5/-/" + encpwd5b64e + "/-/5/-/" + "/-/6/-/" + encpwd6b64e + "/-/6/-/" + "/-/7/-/" + encpwd7b64e + "/-/7/-/" + "/-/8/-/" + encpwd8b64e + "/-/8/-/" + "/-/9/-/" + encpwd9b64e + "/-/9/-/" + "/-/10/-/" + encpwd10b64e + "/-/10/-/" + "/-/11/-/" + encpwd11b64e + "/-/11/-/" + "/-/12/-/" + encPIDb64e + "/-/12/-/" + d4 + d5 + d6)
+          file.write(d1 + d2 + d3 + "/-/0/-/" + encMessageb64e + "/-/0/-/" + "/-/1/-/" + encpwd1b64e + "/-/1/-/" + "/-/2/-/" + encpwd2b64e + "/-/2/-/" + "/-/3/-/" + encpwdb64e + "/-/3/-/" + "/-/4/-/" + encpwd4b64e + "/-/4/-/" + "/-/5/-/" + encpwd5b64e + "/-/5/-/" + "/-/6/-/" + encpwd6b64e + "/-/6/-/" + "/-/7/-/" + encpwd7b64e + "/-/7/-/" + "/-/8/-/" + encpwd8b64e + "/-/8/-/" + "/-/9/-/" + encpwd9b64e + "/-/9/-/" + "/-/10/-/" + encpwd10b64e + "/-/10/-/" + "/-/11/-/" + encpwd11b64e + "/-/11/-/" + "/-/12/-/" + encPIDb64e + "/-/12/-/" + d4 + d5 + d6)
         elif duwap == False:
           file.write(d1 + d2 + d3 + "/-/0/-/" + encMessageb64e + "/-/0/-/" + d4 + d5 + d6)
           os.system("clear")
@@ -307,7 +307,7 @@ def encrypt():
       elif "." not in name:
         with open(os.getcwd() + name + ".", 'w') as file:
           if duwap == True:
-            file.write(d1 + d2 + d3 + "/-/0/-/" + encMessageb64e + "/-/0/-/" + "/-/1/-/" + encpwd1b64e + "/-/1/-/" + "/-/2/-/" + encpwd2b64e + "/-/2/-/" "/-/3/-/" + encpwdb64e + "/-/3/-/" + "/-/4/-/" + encpwd4b64e + "/-/4/-/" + "/-/5/-/" + encpwd5b64e + "/-/5/-/" + "/-/6/-/" + encpwd6b64e + "/-/6/-/" + "/-/7/-/" + encpwd7b64e + "/-/7/-/" + "/-/8/-/" + encpwd8b64e + "/-/8/-/" + "/-/9/-/" + encpwd9b64e + "/-/9/-/" + "/-/10/-/" + encpwd10b64e + "/-/10/-/" + "/-/11/-/" + encpwd11b64e + "/-/11/-/" + "/-/12/-/" + encPIDb64e + "/-/12/-/" + d4 + d5 + d6)
+            file.write(d1 + d2 + d3 + "/-/0/-/" + encMessageb64e + "/-/0/-/" + "/-/1/-/" + encpwd1b64e + "/-/1/-/" + "/-/2/-/" + encpwd2b64e + "/-/2/-/" + "/-/3/-/" + encpwdb64e + "/-/3/-/" + "/-/4/-/" + encpwd4b64e + "/-/4/-/" + "/-/5/-/" + encpwd5b64e + "/-/5/-/" + "/-/6/-/" + encpwd6b64e + "/-/6/-/" + "/-/7/-/" + encpwd7b64e + "/-/7/-/" + "/-/8/-/" + encpwd8b64e + "/-/8/-/" + "/-/9/-/" + encpwd9b64e + "/-/9/-/" + "/-/10/-/" + encpwd10b64e + "/-/10/-/" + "/-/11/-/" + encpwd11b64e + "/-/11/-/" + "/-/12/-/" + encPIDb64e + "/-/12/-/" + d4 + d5 + d6)
             os.system("clear")
           if duwap == False:
             file.write(d1 + d2 + d3 + "/-/0/-/" + encMessageb64e + "/-/0/-/" + d4 + d5 + d6)
@@ -327,7 +327,7 @@ def encrypt():
   elif os.path.isfile(os.getcwd() + "/data.txt") == False:
     with open(os.getcwd() + "/data.txt", 'w') as file:
       if duwap == True:
-        file.write(d1 + d2 + d3 + "/-/0/-/" + encMessageb64e + "/-/0/-/" + "/-/1/-/" + encpwd1b64e + "/-/1/-/" + "/-/2/-/" + encpwd2b64e + "/-/2/-/" "/-/3/-/" + encpwdb64e + "/-/3/-/" + "/-/4/-/" + encpwd4b64e + "/-/4/-/" + "/-/5/-/" + encpwd5b64e + "/-/5/-/" + "/-/6/-/" + encpwd6b64e + "/-/6/-/" + "/-/7/-/" + encpwd7b64e + "/-/7/-/" + "/-/8/-/" + encpwd8b64e + "/-/8/-/" + "/-/9/-/" + encpwd9b64e + "/-/9/-/" + "/-/10/-/" + encpwd10b64e + "/-/10/-/" + "/-/11/-/" + encpwd11b64e + "/-/11/-/" + "/-/12/-/" + encPIDb64e + "/-/12/-/" + d4 + d5 + d6)
+        file.write(d1 + d2 + d3 + "/-/0/-/" + encMessageb64e + "/-/0/-/" + "/-/1/-/" + encpwd1b64e + "/-/1/-/" + "/-/2/-/" + encpwd2b64e + "/-/2/-/" + "/-/3/-/" + encpwdb64e + "/-/3/-/" + "/-/4/-/" + encpwd4b64e + "/-/4/-/" + "/-/5/-/" + encpwd5b64e + "/-/5/-/" + "/-/6/-/" + encpwd6b64e + "/-/6/-/" + "/-/7/-/" + encpwd7b64e + "/-/7/-/" + "/-/8/-/" + encpwd8b64e + "/-/8/-/" + "/-/9/-/" + encpwd9b64e + "/-/9/-/" + "/-/10/-/" + encpwd10b64e + "/-/10/-/" + "/-/11/-/" + encpwd11b64e + "/-/11/-/" + "/-/12/-/" + encPIDb64e + "/-/12/-/" + d4 + d5 + d6)
         os.system("clear")
       elif duwap == False:
         file.write(d1 + d2 + d3 + "/-/0/-/" + encMessageb64e + "/-/0/-/" + d4 + d5 + d6)
